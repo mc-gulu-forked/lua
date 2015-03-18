@@ -1,3 +1,14 @@
 _*
 .DS_Store
 
+*.sdf
+*.suo
+
+/build-vs2013/CMakeFiles
+/build-vs2013/Debug
+/build-vs2013/Release
+/build-vs2013/Win32
+/build-vs2013/*.dir
+/build-vs2013/*.cmake
+/build-vs2013/CMakeCache.txt
+/build-vs2013/install_manifest.txt
