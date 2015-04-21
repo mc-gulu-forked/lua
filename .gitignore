@@ -3,6 +3,7 @@ _*
 
 *.sdf
 *.suo
+*.user
 
 /build-vs2013/CMakeFiles
 /build-vs2013/Debug
