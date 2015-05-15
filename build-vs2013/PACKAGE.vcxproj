@@ -168,7 +168,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="X:\repositories\bubbletown\external\BtLua\dep\lua\build-vs2013\CMakeFiles\78e6b07516a54f1676ce3247e16b3c36\PACKAGE_force.rule">
+    <CustomBuild Include="CMakeFiles\78e6b07516a54f1676ce3247e16b3c36\PACKAGE_force.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
 cd .

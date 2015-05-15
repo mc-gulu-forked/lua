@@ -1,105 +1,105 @@
 ﻿<?xml version="1.0" encoding="Windows-1252"?>
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\lapi.c">
+    <ClCompile Include="..\src\lapi.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\lcode.c">
+    <ClCompile Include="..\src\lcode.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\lctype.c">
+    <ClCompile Include="..\src\lctype.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\ldebug.c">
+    <ClCompile Include="..\src\ldebug.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\ldo.c">
+    <ClCompile Include="..\src\ldo.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\ldump.c">
+    <ClCompile Include="..\src\ldump.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\lfunc.c">
+    <ClCompile Include="..\src\lfunc.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\lgc.c">
+    <ClCompile Include="..\src\lgc.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\llex.c">
+    <ClCompile Include="..\src\llex.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\lmem.c">
+    <ClCompile Include="..\src\lmem.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\lobject.c">
+    <ClCompile Include="..\src\lobject.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\lopcodes.c">
+    <ClCompile Include="..\src\lopcodes.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\lparser.c">
+    <ClCompile Include="..\src\lparser.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\lstate.c">
+    <ClCompile Include="..\src\lstate.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\lstring.c">
+    <ClCompile Include="..\src\lstring.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\ltable.c">
+    <ClCompile Include="..\src\ltable.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\ltm.c">
+    <ClCompile Include="..\src\ltm.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\lundump.c">
+    <ClCompile Include="..\src\lundump.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\lvm.c">
+    <ClCompile Include="..\src\lvm.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\lzio.c">
+    <ClCompile Include="..\src\lzio.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\lauxlib.c">
+    <ClCompile Include="..\src\lauxlib.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\lbaselib.c">
+    <ClCompile Include="..\src\lbaselib.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\lbitlib.c">
+    <ClCompile Include="..\src\lbitlib.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\lcorolib.c">
+    <ClCompile Include="..\src\lcorolib.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\ldblib.c">
+    <ClCompile Include="..\src\ldblib.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\liolib.c">
+    <ClCompile Include="..\src\liolib.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\lmathlib.c">
+    <ClCompile Include="..\src\lmathlib.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\loslib.c">
+    <ClCompile Include="..\src\loslib.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\lstrlib.c">
+    <ClCompile Include="..\src\lstrlib.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\ltablib.c">
+    <ClCompile Include="..\src\ltablib.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\linit.c">
+    <ClCompile Include="..\src\linit.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\loadlib_rel.c">
+    <ClCompile Include="..\src\loadlib_rel.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="X:\repositories\bubbletown\external\BtLua\dep\lua\CMakeLists.txt" />
+    <CustomBuild Include="..\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">

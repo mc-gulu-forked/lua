@@ -104,10 +104,10 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="X:\repositories\bubbletown\external\BtLua\dep\lua\CMakeLists.txt">
+    <CustomBuild Include="..\CMakeLists.txt">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule X:/repositories/bubbletown/external/BtLua/dep/lua/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -HX:/repositories/bubbletown/external/BtLua/dep/lua -BX:/repositories/bubbletown/external/BtLua/dep/lua/build-vs2013 --check-stamp-file X:\repositories\bubbletown\external\BtLua\dep\lua\build-vs2013\CMakeFiles\generate.stamp
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -H.. -B. --check-stamp-file X:\repositories\bubbletown\external\BtLua\dep\lua\build-vs2013\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -120,7 +120,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule X:/repositories/bubbletown/external/BtLua/dep/lua/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -HX:/repositories/bubbletown/external/BtLua/dep/lua -BX:/repositories/bubbletown/external/BtLua/dep/lua/build-vs2013 --check-stamp-file X:\repositories\bubbletown\external\BtLua\dep\lua\build-vs2013\CMakeFiles\generate.stamp
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -H.. -B. --check-stamp-file X:\repositories\bubbletown\external\BtLua\dep\lua\build-vs2013\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -133,7 +133,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule X:/repositories/bubbletown/external/BtLua/dep/lua/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -HX:/repositories/bubbletown/external/BtLua/dep/lua -BX:/repositories/bubbletown/external/BtLua/dep/lua/build-vs2013 --check-stamp-file X:\repositories\bubbletown\external\BtLua\dep\lua\build-vs2013\CMakeFiles\generate.stamp
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -H.. -B. --check-stamp-file X:\repositories\bubbletown\external\BtLua\dep\lua\build-vs2013\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -146,7 +146,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule X:/repositories/bubbletown/external/BtLua/dep/lua/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -HX:/repositories/bubbletown/external/BtLua/dep/lua -BX:/repositories/bubbletown/external/BtLua/dep/lua/build-vs2013 --check-stamp-file X:\repositories\bubbletown\external\BtLua\dep\lua\build-vs2013\CMakeFiles\generate.stamp
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -H.. -B. --check-stamp-file X:\repositories\bubbletown\external\BtLua\dep\lua\build-vs2013\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone

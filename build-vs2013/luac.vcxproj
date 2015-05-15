@@ -85,7 +85,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>X:\repositories\bubbletown\external\BtLua\dep\lua\src;X:\repositories\bubbletown\external\BtLua\dep\lua\build-vs2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\src;$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsC</CompileAs>
@@ -118,8 +118,7 @@
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>X:/repositories/bubbletown/external/BtLua/dep/lua/build-vs2013/Debug/luac.lib</ImportLibrary>
-      <ProgramDataBaseFile>X:/repositories/bubbletown/external/BtLua/dep/lua/build-vs2013/Debug/luac.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version>
       </Version>
@@ -130,7 +129,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>X:\repositories\bubbletown\external\BtLua\dep\lua\src;X:\repositories\bubbletown\external\BtLua\dep\lua\build-vs2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\src;$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsC</CompileAs>
       <ExceptionHandling>
@@ -163,8 +162,7 @@
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>X:/repositories/bubbletown/external/BtLua/dep/lua/build-vs2013/Release/luac.lib</ImportLibrary>
-      <ProgramDataBaseFile>X:/repositories/bubbletown/external/BtLua/dep/lua/build-vs2013/Release/luac.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version>
       </Version>
@@ -175,7 +173,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>X:\repositories\bubbletown\external\BtLua\dep\lua\src;X:\repositories\bubbletown\external\BtLua\dep\lua\build-vs2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\src;$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
       <CompileAs>CompileAsC</CompileAs>
       <ExceptionHandling>
@@ -208,8 +206,7 @@
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>X:/repositories/bubbletown/external/BtLua/dep/lua/build-vs2013/MinSizeRel/luac.lib</ImportLibrary>
-      <ProgramDataBaseFile>X:/repositories/bubbletown/external/BtLua/dep/lua/build-vs2013/MinSizeRel/luac.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version>
       </Version>
@@ -220,7 +217,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>X:\repositories\bubbletown\external\BtLua\dep\lua\src;X:\repositories\bubbletown\external\BtLua\dep\lua\build-vs2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\src;$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CompileAs>CompileAsC</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -252,8 +249,7 @@
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>X:/repositories/bubbletown/external/BtLua/dep/lua/build-vs2013/RelWithDebInfo/luac.lib</ImportLibrary>
-      <ProgramDataBaseFile>X:/repositories/bubbletown/external/BtLua/dep/lua/build-vs2013/RelWithDebInfo/luac.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version>
       </Version>
@@ -263,10 +259,10 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="X:\repositories\bubbletown\external\BtLua\dep\lua\CMakeLists.txt">
+    <CustomBuild Include="..\CMakeLists.txt">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule X:/repositories/bubbletown/external/BtLua/dep/lua/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -HX:/repositories/bubbletown/external/BtLua/dep/lua -BX:/repositories/bubbletown/external/BtLua/dep/lua/build-vs2013 --check-stamp-file X:\repositories\bubbletown\external\BtLua\dep\lua\build-vs2013\CMakeFiles\generate.stamp
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -H.. -B. --check-stamp-file X:\repositories\bubbletown\external\BtLua\dep\lua\build-vs2013\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -279,7 +275,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule X:/repositories/bubbletown/external/BtLua/dep/lua/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -HX:/repositories/bubbletown/external/BtLua/dep/lua -BX:/repositories/bubbletown/external/BtLua/dep/lua/build-vs2013 --check-stamp-file X:\repositories\bubbletown\external\BtLua\dep\lua\build-vs2013\CMakeFiles\generate.stamp
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -H.. -B. --check-stamp-file X:\repositories\bubbletown\external\BtLua\dep\lua\build-vs2013\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -292,7 +288,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule X:/repositories/bubbletown/external/BtLua/dep/lua/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -HX:/repositories/bubbletown/external/BtLua/dep/lua -BX:/repositories/bubbletown/external/BtLua/dep/lua/build-vs2013 --check-stamp-file X:\repositories\bubbletown\external\BtLua\dep\lua\build-vs2013\CMakeFiles\generate.stamp
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -H.. -B. --check-stamp-file X:\repositories\bubbletown\external\BtLua\dep\lua\build-vs2013\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -305,7 +301,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule X:/repositories/bubbletown/external/BtLua/dep/lua/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -HX:/repositories/bubbletown/external/BtLua/dep/lua -BX:/repositories/bubbletown/external/BtLua/dep/lua/build-vs2013 --check-stamp-file X:\repositories\bubbletown\external\BtLua\dep\lua\build-vs2013\CMakeFiles\generate.stamp
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -H.. -B. --check-stamp-file X:\repositories\bubbletown\external\BtLua\dep\lua\build-vs2013\CMakeFiles\generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -319,42 +315,42 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\lapi.c" />
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\lcode.c" />
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\lctype.c" />
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\ldebug.c" />
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\ldo.c" />
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\ldump.c" />
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\lfunc.c" />
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\lgc.c" />
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\llex.c" />
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\lmem.c" />
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\lobject.c" />
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\lopcodes.c" />
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\lparser.c" />
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\lstate.c" />
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\lstring.c" />
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\ltable.c" />
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\ltm.c" />
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\lundump.c" />
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\lvm.c" />
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\lzio.c" />
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\lauxlib.c" />
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\lbaselib.c" />
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\lbitlib.c" />
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\lcorolib.c" />
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\ldblib.c" />
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\liolib.c" />
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\lmathlib.c" />
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\loslib.c" />
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\lstrlib.c" />
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\ltablib.c" />
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\linit.c" />
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\loadlib_rel.c" />
-    <ClCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\luac.c">
+    <ClCompile Include="..\src\lapi.c" />
+    <ClCompile Include="..\src\lcode.c" />
+    <ClCompile Include="..\src\lctype.c" />
+    <ClCompile Include="..\src\ldebug.c" />
+    <ClCompile Include="..\src\ldo.c" />
+    <ClCompile Include="..\src\ldump.c" />
+    <ClCompile Include="..\src\lfunc.c" />
+    <ClCompile Include="..\src\lgc.c" />
+    <ClCompile Include="..\src\llex.c" />
+    <ClCompile Include="..\src\lmem.c" />
+    <ClCompile Include="..\src\lobject.c" />
+    <ClCompile Include="..\src\lopcodes.c" />
+    <ClCompile Include="..\src\lparser.c" />
+    <ClCompile Include="..\src\lstate.c" />
+    <ClCompile Include="..\src\lstring.c" />
+    <ClCompile Include="..\src\ltable.c" />
+    <ClCompile Include="..\src\ltm.c" />
+    <ClCompile Include="..\src\lundump.c" />
+    <ClCompile Include="..\src\lvm.c" />
+    <ClCompile Include="..\src\lzio.c" />
+    <ClCompile Include="..\src\lauxlib.c" />
+    <ClCompile Include="..\src\lbaselib.c" />
+    <ClCompile Include="..\src\lbitlib.c" />
+    <ClCompile Include="..\src\lcorolib.c" />
+    <ClCompile Include="..\src\ldblib.c" />
+    <ClCompile Include="..\src\liolib.c" />
+    <ClCompile Include="..\src\lmathlib.c" />
+    <ClCompile Include="..\src\loslib.c" />
+    <ClCompile Include="..\src\lstrlib.c" />
+    <ClCompile Include="..\src\ltablib.c" />
+    <ClCompile Include="..\src\linit.c" />
+    <ClCompile Include="..\src\loadlib_rel.c" />
+    <ClCompile Include="..\src\luac.c">
       <ObjectFileName>$(IntDir)/src/luac.c.obj</ObjectFileName>
     </ClCompile>
-    <ResourceCompile Include="X:\repositories\bubbletown\external\BtLua\dep\lua\src\luac.rc">
+    <ResourceCompile Include="..\src\luac.rc">
       <ObjectFileName>$(IntDir)/src/luac.rc.res</ObjectFileName>
     </ResourceCompile>
   </ItemGroup>
