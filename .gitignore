@@ -13,4 +13,4 @@ _*
 /build-vs2013/*.cmake
 /build-vs2013/CMakeCache.txt
 /build-vs2013/install_manifest.txt
-/build-vs2013
+
